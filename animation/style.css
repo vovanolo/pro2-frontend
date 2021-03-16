@@ -1,0 +1,114 @@
+/* .box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: cubic-bezier(0, -0.97, 0.93, 1.67);
+} */
+
+/* @keyframes myanimation {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: blue;
+  }
+  50% {
+    background-color: yellow;
+  }
+  100% {
+    background-color: green;
+  }
+} */
+/* @keyframes move {
+  0% {
+    left: 0px;
+    top: 0px;
+    background-color: red;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+    background-color: yellow;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+    background-color: blue;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+    background-color: green;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+    background-color: red;
+  }
+} */
+
+/* .astroboy {
+  height: 193px;
+  width: 151px;
+  background: url("astro.png") left center;
+  animation-name: astroboy;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(20);
+  animation-iteration-count: infinite;
+}
+
+.astroboy:hover {
+  animation-play-state: paused;
+}
+
+@keyframes astroboy {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: -3025px;
+  }
+} */
+
+body {
+  background-color: #333;
+}
+
+.box {
+  background-color: white;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  animation-name: border;
+  animation-duration: 4s;
+  animation-iteration-count: 50;
+  animation-fill-mode: forwards;
+}
+
+@keyframes border {
+  0% {
+    background-color: white;
+    border-radius: 0 0 0 0;
+  }
+  25% {
+    background-color: red;
+    border-radius: 50% 0 0 0;
+  }
+  50% {
+    background-color: green;
+    border-radius: 50% 50% 0 0;
+  }
+  75% {
+    background-color: blue;
+    border-radius: 50% 50% 50% 0;
+  }
+  100% {
+    background-color: white;
+    border-radius: 50% 50% 50% 50%;
+  }
+}
